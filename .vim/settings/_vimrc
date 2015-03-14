@@ -1,0 +1,122 @@
+" =====================================================
+"		vimrc
+" =====================================================
+" 	Vim specific settings
+
+" 1 - Important
+set nocompatible					" Turn off vi compatibility mode
+
+" 2 - Moving around, searching and patterns
+set ignorecase    			" ignore case when searching
+set smartcase     			" ignore case if search pattern is all lowercase, case-sensitive otherwise
+set incsearch    			 " show search matches as you type
+"set autochdir						" automatically change directory to the currently open file 
+
+" 3 tags
+
+" 4 displaying text
+set wrap       				 	" wrap lines
+set linebreak 					" keep words complete when breaking lines
+set nolist 							" show <Tab> as ^I and end-of-line as $, note: breaks linewrapping	
+set number        			" show line numbers
+set relativenumber			" Show line numbers as an offset rather than absolute
+set scrolloff=8 				" start scrolling when we're 4 lines away from margins
+
+" 5 syntax, highlighting and spelling
+set hlsearch     			 " highlight search terms
+syntax on
+
+" 6 multiple windows
+set laststatus=2 				" Always show status bar
+set hidden 							" hidden means switchable without having to save them
+
+" 7 multiple tab pages
+
+" 11 printing
+
+" 12 messages and info
+set showcmd							" show command being typed in the status line
+set showmode 						" show mode on status line
+set ruler								" show cursor position in the status line
+set visualbell          " visual bells
+set noerrorbells        " don't beep
+
+" 13 selecting text
+
+" 14 editing text
+set undolevels=1000							" undo levels
+set undoreload=1000							"	maximum number lines to save for undo on a buffer reload
+set backspace=indent,eol,start	" configure backspacing
+set showmatch     							" show matching parenthesis
+
+" 15 tabs and indenting
+set tabstop=2					" <Tab> = 2 spaces
+set shiftwidth=2  		" number of spaces to use for autoindenting
+set smarttab      		" insert tabs on the start of a line according to the last line
+set shiftround    		" use multiple of shiftwidth when indenting with '<' and '>' 
+set autoindent    		" set autoindenting on
+set copyindent    		" copy the previous indentation on autoindenting
+
+" 16 folding
+
+" 17 diff mode
+
+" 18 mapping
+set notimeout					" turn off timeout when using leader key
+set timeoutlen=2000		" if using timeout for leader, sets how long till timeout in mS
+
+" 19 reading and writing files
+set fileformats=unix,dos	" Recognize both line endings, write new buffers in unix format 
+set nobackup							" dont keep backup after overwriting file
+
+" 20 the swap file
+set noswapfile				" dont use swap files
+
+" 21 command line editing
+set history=100				" command line history
+
+" 22 executing external commands
+
+" 23 running make and jumping to errors
+
+" 24 system specific
+
+" 25 language specific
+
+" 26 multi-byte characters
+set encoding=utf-8					" encoding 
+
+" 27 various
+
+
+" setup pathogen to disable any pluggins 
+let g:pathogen_disabled = []
+
+" ============= Load External vim settings ==============
+
+if has("win32") || has("win16")
+	source $VIMRUNTIME/../vimfiles/settings/keymap.vim
+	source $VIMRUNTIME/../vimfiles/settings/interface.vim
+	source $VIMRUNTIME/../vimfiles/settings/plugins.vim
+else
+	source ~/.vim/settings/keymap.vim
+	source ~/.vim/settings/interface.vim
+	source ~/.vim/settings/plugins.vim
+endif 
+
+" =============== Pathogen Initialization ===============
+" This loads all the plugins in ~/.vim/bundle
+" Use tpope's pathogen plugin to manage all other plugins
+
+call pathogen#infect()
+call pathogen#helptags()
+
+" =============== Sourcing .vimrc file ===================
+" 	:source $MYVIMRC
+
+" Source the vimrc file after saving it
+"if has("autocmd")
+"  autocmd bufwritepost .vimrc source $MYVIMRC
+"endif
+
+

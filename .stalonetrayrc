@@ -1,0 +1,11 @@
+
+# Settings for stalonetray
+background black
+decorations none
+dockapp_mode none
+fuzzy_edges 0
+grow_gravity E
+icon_gravity E
+icon_size 18
+kludges fix_window_pos,force_icons_size
+geometry 8x1-1+1
