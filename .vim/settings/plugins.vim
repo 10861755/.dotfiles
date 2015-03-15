@@ -9,21 +9,11 @@ let g:netrw_altv = 1
 " Default to tree mode
 let g:netrw_liststyle=3
 
-" ============= Airline configuration ===============
+" ============= Snipmate configuration ===============
 
-if has('gui_running')
-	" airline fancy symbols
-	let g:airline_powerline_fonts = 1
+if has("win32") || has("win16")
+	let g:snippets_dir = "$VIMRUNTIME/../vimfiles/bundle/snippets/"
 else
-	" Tell pathogen to disable airline if we run from terminal
-	call add(g:pathogen_disabled, 'airline')
-endif
+	let g:snippets_dir = "~/.vim/bundle/snippets/"
+endif 
 
-" =============== Gundo configuration ===============
-
-if has('python')
-	let g:gundo_right = 1
-else
-	" disable Gundo if no python support is present
-	call add(g:pathogen_disabled, 'gundo-python')
-endif
