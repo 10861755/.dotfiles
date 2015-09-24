@@ -54,6 +54,7 @@ if has('gui_running')
 		"set guifont=DejaVu_Sans_Mono_for_Powerline:h11:cANSI
 		"set guifont+=DejaVu_Sans_Mono:h11:cANSI
 		set guifont=DejaVu_Sans_Mono:h11:cANSI
+		set guifontwide=MingLiU:h14
 
 	else
 		" check for different *nix's
@@ -83,6 +84,7 @@ else
 
 endif
 
+set showcmd
 " ============== Remove Screen Flash =====================
 
 set noerrorbells visualbell t_vb=
