@@ -119,3 +119,4 @@ call pathogen#helptags()
 "  autocmd bufwritepost .vimrc source $MYVIMRC
 "endif
 
+set showcmd							" show command being typed in the status line

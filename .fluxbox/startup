@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+#xmodmap "/home/alex/.Xmodmap"
+# Hides mouse 
+# unclutter -idle 2 &
+# Desktop icons
+# idesk &
+
+# Background
+#fbsetbg -u feh -t ~/.fluxbox/backgrounds/px.png &
+
+# CPU load monitor
+#wmcpuload &
+# Audio mixer
+#wmix &
+# Network monitor
+#wmnd &
+
+# Applications
+firefox &
+sylpheed &
+vlc &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/alex/.fluxbox/log"

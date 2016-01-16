@@ -1,0 +1,42 @@
+# Global settings
+*font: 							Dejavu Sans:size=12
+
+*.color:        		rgb:40/40/40
+*.textColor:    		rgb:d/d/d
+*.justify:					center
+
+*.borderColor:			rgb:0/0/0
+*.borderWidth:			1
+
+*.unfocused.color:	rgb:8/8/8
+
+# Window
+window.label.unfocus.color:			rgb:8/8/8
+window.button.unfocus.color:		rgb:8/8/8
+window.button.unfocus.picColor:	rgb:d/d/d
+window.button.pressed.color:		rgb:a/a/a
+window.title.height:	20
+
+# Toolbar
+toolbar.height:			20
+
+# Clock 
+toolbar.clock:			parentrelative
+
+# Iconbar
+toolbar.iconbar:   	parentrelative
+toolbar.iconbar.unfocused.color:		rgb:8/8/8
+
+# Menu
+menu.borderWidth:								2
+menu.bullet:                    triangle
+menu.bullet.position:           right
+menu.frame.color:								rgb:a/a/a
+menu.frame.textColor:						rgb:0/0/0
+menu.frame.justify:							left
+menu.hilite.color:							rgb:0/0/0
+menu.hilite.textColor:					rgb:d/d/d
+menu.hilite.justify:						left
+
+#menu.roundCorners:							TopLeft TopRight BottomLeft BottomRight
+#window.roundCorners:							TopLeft TopRight BottomLeft BottomRight

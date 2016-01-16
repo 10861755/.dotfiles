@@ -43,8 +43,8 @@ nnoremap <silent> ]B :blast<CR>
 " Use square brackets to traverse quickfix 
 nnoremap <silent> [q :cprevious<CR>
 nnoremap <silent> ]q :cnext<CR>
-nnoremap <silent> [q :cfirst<CR>
-nnoremap <silent> ]q :clast<CR>
+nnoremap <silent> [Q :cfirst<CR>
+nnoremap <silent> ]Q :clast<CR>
 
 " Use square brackets to traverse tags
 

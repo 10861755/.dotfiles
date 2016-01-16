@@ -21,8 +21,8 @@ Xman*topBox:    false
 URxvt.termName: rxvt-unicode-256color
 URxvt.intensityStyles: false
 
-URxvt*background:   #000000
-URxvt*foreground:   #ffffff
+URxvt*background:   #202020
+URxvt*foreground:   #DDDDDD
 //URxvt*background:   #0c0d0e
 //URxvt*foreground:   #7f8f9f
 
@@ -48,18 +48,19 @@ URxvt*tripleclickwords: true
 URxvt*hold: false
 
 URxvt*urlLauncher: /usr/local/bin/firefox
-//URxvt*iconFile: /usr/local/share/pixmaps/gnome_terminal2.png
-URxvt*iconFile: /usr/local/share/pixmaps/gnome-term.png
+//URxvt*iconFile: /usr/local/share/pixmaps/gnome-term.png
 
-URxvt*font: xft:Dejavu Sans Mono:size=11
-URxvt*boldFont: xft:Dejavu Sans Mono:size=11:bold
-URxvt*italicFont: xft:Dejavu Sans Mono:size=11:italic
-URxvt*boldItalicFont: xft:Dejavu Sans Mono:size=11:bold:italic
+URxvt*font: xft:Dejavu Sans Mono:size=12
+URxvt*boldFont: xft:Dejavu Sans Mono:size=12:bold
+URxvt*italicFont: xft:Dejavu Sans Mono:size=12:italic
+URxvt*boldItalicFont: xft:Dejavu Sans Mono:size=12:bold:italic
 //URxvt*font: xft:SourceCodePro sans mono:size=11
 //URxvt*font: -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-1
 //URxvt*boldFont: -misc-fixed-bold-r-normal-*-14-*-*-*-*-*-iso10646-1
 //URxvt*italicFont: -misc-fixed-medium-o-*-*-13-*-*-*-*-*-iso10646-1
 //URxvt*boldItalicFont: -misc-fixed-medium-r-*-*-13-*-*-*-*-*-iso10646-1
+
+URxvt.urgentOnBell: true
 
 XLock.mode: galaxy
 XLock.erasetime: 0

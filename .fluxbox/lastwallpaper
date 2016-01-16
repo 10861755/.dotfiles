@@ -1,0 +1,3 @@
+$tile fbsetroot|/home/alex/.fluxbox/backgrounds/px.png|style|:0.0
+wpsetters feh
+$tile $full|/home/alex/.fluxbox/backgrounds/px.png||:0

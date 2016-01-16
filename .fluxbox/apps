@@ -1,0 +1,11 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=Navigator) (class=Firefox) (role=browser)
+[end]
+[app] (name=vlc) (class=vlc)
+[end]
+[app] (name=evince) (class=Evince)
+  [Dimensions]	{50% 100%}
+[end]
