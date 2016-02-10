@@ -88,6 +88,9 @@ set encoding=utf-8					" encoding
 
 " 27 various
 
+" 43 Using filetypes
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 " setup pathogen to disable any pluggins 
 let g:pathogen_disabled = []
