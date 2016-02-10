@@ -6,7 +6,6 @@ set statusline=%t      	 			"tail of the filename (t), Full path (F)
 set statusline+=\ \ ft:%Y      	"filetype
 set statusline+=\ ff:%{&ff} 	"file format
 set statusline+=\ enc:%{strlen(&fenc)?&fenc:'none'} "file encoding
-set statusline+=\ %{fugitive#statusline()} " Fugitive pluggin
 set statusline+=\ %h      "help file flag
 set statusline+=\ %m      "modified flag
 set statusline+=\ %r      "read only flag
